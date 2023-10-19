@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DetectionCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0v-3A-yxH">
+                                <rect key="frame" x="50" y="718" width="293" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="URx-nL-HNW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Turn on Camera"/>
+                                <connections>
+                                    <action selector="btnCameraTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZHK-2q-zgG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q0v-3A-yxH" secondAttribute="bottom" constant="50" id="5pu-Re-E3D"/>
+                            <constraint firstItem="q0v-3A-yxH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="k8A-f1-gVe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q0v-3A-yxH" secondAttribute="trailing" constant="50" id="mdV-ln-0wQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCamera" destination="q0v-3A-yxH" id="2NB-WV-pH6"/>
+                        <segue destination="R5n-Vz-J48" kind="show" identifier="pushCamera" id="jAe-LH-I55"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43" y="-34"/>
+        </scene>
+        <!--Camera Detection-->
+        <scene sceneID="qYM-kj-GhM">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="R5n-Vz-J48" customClass="CameraDetection" customModule="DetectionCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oho-hh-QSa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myw-Do-fNk">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="650"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="650" id="DTs-Bf-iha"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detected result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7x-1n-RQT">
+                                <rect key="frame" x="12" y="680" width="381" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hK1-Vz-T0w">
+                                <rect key="frame" x="15" y="725" width="378" height="21.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bgq-f6-QJR"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hK1-Vz-T0w" firstAttribute="top" secondItem="W7x-1n-RQT" secondAttribute="bottom" constant="15" id="1ci-mw-9rC"/>
+                            <constraint firstItem="Bgq-f6-QJR" firstAttribute="trailing" secondItem="hK1-Vz-T0w" secondAttribute="trailing" id="8GM-LN-d9D"/>
+                            <constraint firstItem="myw-Do-fNk" firstAttribute="top" secondItem="Bgq-f6-QJR" secondAttribute="top" id="C92-eN-6as"/>
+                            <constraint firstItem="hK1-Vz-T0w" firstAttribute="leading" secondItem="Bgq-f6-QJR" secondAttribute="leading" constant="15" id="EfO-Qb-5S0"/>
+                            <constraint firstItem="Bgq-f6-QJR" firstAttribute="trailing" secondItem="W7x-1n-RQT" secondAttribute="trailing" id="FIo-TK-TsN"/>
+                            <constraint firstItem="myw-Do-fNk" firstAttribute="leading" secondItem="Bgq-f6-QJR" secondAttribute="leading" id="Fha-bt-ueB"/>
+                            <constraint firstItem="Bgq-f6-QJR" firstAttribute="trailing" secondItem="myw-Do-fNk" secondAttribute="trailing" id="Mcw-9P-l2i"/>
+                            <constraint firstItem="W7x-1n-RQT" firstAttribute="leading" secondItem="Bgq-f6-QJR" secondAttribute="leading" constant="12" id="mIQ-sK-WgA"/>
+                            <constraint firstItem="W7x-1n-RQT" firstAttribute="top" secondItem="myw-Do-fNk" secondAttribute="bottom" constant="30" id="mOn-25-Rld"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="myw-Do-fNk" id="xa3-vm-67a"/>
+                        <outlet property="nameObject" destination="hK1-Vz-T0w" id="ajv-qC-zqo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQu-y5-vH5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823.66412213740455" y="-39.436619718309863"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

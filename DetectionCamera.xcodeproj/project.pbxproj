@@ -17,6 +17,8 @@
 		E9E90CCF2ADFAD1100F94BAB /* Object_DetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E90CCE2ADFAD1100F94BAB /* Object_DetectionTests.swift */; };
 		E9E90CD92ADFAD1100F94BAB /* Object_DetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E90CD82ADFAD1100F94BAB /* Object_DetectionUITests.swift */; };
 		E9E90CDB2ADFAD1100F94BAB /* Object_DetectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E90CDA2ADFAD1100F94BAB /* Object_DetectionUITestsLaunchTests.swift */; };
+		E9E90CEC2ADFCD3F00F94BAB /* CameraDetetion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E90CEB2ADFCD3F00F94BAB /* CameraDetetion.swift */; };
+		E9E90CF22ADFE2A600F94BAB /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = E9E90CF12ADFE2A600F94BAB /* yolov8n.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E9E90CB12ADFAD1000F94BAB /* Object_Detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Object_Detection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E90CB12ADFAD1000F94BAB /* DetectionCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DetectionCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E90CB42ADFAD1000F94BAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9E90CB62ADFAD1000F94BAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E9E90CB82ADFAD1000F94BAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,11 +48,13 @@
 		E9E90CC02ADFAD1100F94BAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9E90CC32ADFAD1100F94BAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9E90CC52ADFAD1100F94BAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9E90CCA2ADFAD1100F94BAB /* Object_DetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Object_DetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E90CCA2ADFAD1100F94BAB /* DetectionCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetectionCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E90CCE2ADFAD1100F94BAB /* Object_DetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_DetectionTests.swift; sourceTree = "<group>"; };
-		E9E90CD42ADFAD1100F94BAB /* Object_DetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Object_DetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E90CD42ADFAD1100F94BAB /* DetectionCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DetectionCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E90CD82ADFAD1100F94BAB /* Object_DetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_DetectionUITests.swift; sourceTree = "<group>"; };
 		E9E90CDA2ADFAD1100F94BAB /* Object_DetectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object_DetectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9E90CEB2ADFCD3F00F94BAB /* CameraDetetion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraDetetion.swift; sourceTree = "<group>"; };
+		E9E90CF12ADFE2A600F94BAB /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; name = yolov8n.mlpackage; path = ../../../../../../Downloads/yolov8n.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +95,9 @@
 		E9E90CB22ADFAD1000F94BAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9E90CB12ADFAD1000F94BAB /* Object_Detection.app */,
-				E9E90CCA2ADFAD1100F94BAB /* Object_DetectionTests.xctest */,
-				E9E90CD42ADFAD1100F94BAB /* Object_DetectionUITests.xctest */,
+				E9E90CB12ADFAD1000F94BAB /* DetectionCamera.app */,
+				E9E90CCA2ADFAD1100F94BAB /* DetectionCameraTests.xctest */,
+				E9E90CD42ADFAD1100F94BAB /* DetectionCameraUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,14 +105,11 @@
 		E9E90CB32ADFAD1000F94BAB /* Object_Detection */ = {
 			isa = PBXGroup;
 			children = (
-				E9E90CB42ADFAD1000F94BAB /* AppDelegate.swift */,
-				E9E90CB62ADFAD1000F94BAB /* SceneDelegate.swift */,
-				E9E90CB82ADFAD1000F94BAB /* ViewController.swift */,
-				E9E90CBA2ADFAD1000F94BAB /* Main.storyboard */,
-				E9E90CC02ADFAD1100F94BAB /* Assets.xcassets */,
-				E9E90CC22ADFAD1100F94BAB /* LaunchScreen.storyboard */,
 				E9E90CC52ADFAD1100F94BAB /* Info.plist */,
-				E9E90CBD2ADFAD1000F94BAB /* Object_Detection.xcdatamodeld */,
+				E9E90CF02ADFE29100F94BAB /* YLModel */,
+				E9E90CEA2ADFCCDD00F94BAB /* Presentation */,
+				E9E90CE92ADFCC8F00F94BAB /* Resource */,
+				E9E90CE82ADFCC8500F94BAB /* Application */,
 			);
 			path = Object_Detection;
 			sourceTree = "<group>";
@@ -130,12 +131,49 @@
 			path = Object_DetectionUITests;
 			sourceTree = "<group>";
 		};
+		E9E90CE82ADFCC8500F94BAB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E9E90CB42ADFAD1000F94BAB /* AppDelegate.swift */,
+				E9E90CB62ADFAD1000F94BAB /* SceneDelegate.swift */,
+				E9E90CBA2ADFAD1000F94BAB /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E9E90CE92ADFCC8F00F94BAB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E9E90CBD2ADFAD1000F94BAB /* Object_Detection.xcdatamodeld */,
+				E9E90CC02ADFAD1100F94BAB /* Assets.xcassets */,
+				E9E90CC22ADFAD1100F94BAB /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E9E90CEA2ADFCCDD00F94BAB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E9E90CB82ADFAD1000F94BAB /* ViewController.swift */,
+				E9E90CEB2ADFCD3F00F94BAB /* CameraDetetion.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E9E90CF02ADFE29100F94BAB /* YLModel */ = {
+			isa = PBXGroup;
+			children = (
+				E9E90CF12ADFE2A600F94BAB /* yolov8n.mlpackage */,
+			);
+			path = YLModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E9E90CB02ADFAD1000F94BAB /* Object_Detection */ = {
+		E9E90CB02ADFAD1000F94BAB /* DetectionCamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9E90CDE2ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "Object_Detection" */;
+			buildConfigurationList = E9E90CDE2ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "DetectionCamera" */;
 			buildPhases = (
 				E9E90CAD2ADFAD1000F94BAB /* Sources */,
 				E9E90CAE2ADFAD1000F94BAB /* Frameworks */,
@@ -145,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = Object_Detection;
+			name = DetectionCamera;
 			productName = Object_Detection;
-			productReference = E9E90CB12ADFAD1000F94BAB /* Object_Detection.app */;
+			productReference = E9E90CB12ADFAD1000F94BAB /* DetectionCamera.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E9E90CC92ADFAD1100F94BAB /* Object_DetectionTests */ = {
+		E9E90CC92ADFAD1100F94BAB /* DetectionCameraTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9E90CE12ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "Object_DetectionTests" */;
+			buildConfigurationList = E9E90CE12ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "DetectionCameraTests" */;
 			buildPhases = (
 				E9E90CC62ADFAD1100F94BAB /* Sources */,
 				E9E90CC72ADFAD1100F94BAB /* Frameworks */,
@@ -163,14 +201,14 @@
 			dependencies = (
 				E9E90CCC2ADFAD1100F94BAB /* PBXTargetDependency */,
 			);
-			name = Object_DetectionTests;
+			name = DetectionCameraTests;
 			productName = Object_DetectionTests;
-			productReference = E9E90CCA2ADFAD1100F94BAB /* Object_DetectionTests.xctest */;
+			productReference = E9E90CCA2ADFAD1100F94BAB /* DetectionCameraTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E9E90CD32ADFAD1100F94BAB /* Object_DetectionUITests */ = {
+		E9E90CD32ADFAD1100F94BAB /* DetectionCameraUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9E90CE42ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "Object_DetectionUITests" */;
+			buildConfigurationList = E9E90CE42ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "DetectionCameraUITests" */;
 			buildPhases = (
 				E9E90CD02ADFAD1100F94BAB /* Sources */,
 				E9E90CD12ADFAD1100F94BAB /* Frameworks */,
@@ -181,9 +219,9 @@
 			dependencies = (
 				E9E90CD62ADFAD1100F94BAB /* PBXTargetDependency */,
 			);
-			name = Object_DetectionUITests;
+			name = DetectionCameraUITests;
 			productName = Object_DetectionUITests;
-			productReference = E9E90CD42ADFAD1100F94BAB /* Object_DetectionUITests.xctest */;
+			productReference = E9E90CD42ADFAD1100F94BAB /* DetectionCameraUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E9E90CAC2ADFAD0F00F94BAB /* Build configuration list for PBXProject "Object_Detection" */;
+			buildConfigurationList = E9E90CAC2ADFAD0F00F94BAB /* Build configuration list for PBXProject "DetectionCamera" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -218,13 +256,16 @@
 				Base,
 			);
 			mainGroup = E9E90CA82ADFAD0F00F94BAB;
+			packageReferences = (
+				E9E90CED2ADFDC4900F94BAB /* XCRemoteSwiftPackageReference "tensorflow" */,
+			);
 			productRefGroup = E9E90CB22ADFAD1000F94BAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9E90CB02ADFAD1000F94BAB /* Object_Detection */,
-				E9E90CC92ADFAD1100F94BAB /* Object_DetectionTests */,
-				E9E90CD32ADFAD1100F94BAB /* Object_DetectionUITests */,
+				E9E90CB02ADFAD1000F94BAB /* DetectionCamera */,
+				E9E90CC92ADFAD1100F94BAB /* DetectionCameraTests */,
+				E9E90CD32ADFAD1100F94BAB /* DetectionCameraUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,7 +303,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E90CB92ADFAD1000F94BAB /* ViewController.swift in Sources */,
+				E9E90CF22ADFE2A600F94BAB /* yolov8n.mlpackage in Sources */,
 				E9E90CB52ADFAD1000F94BAB /* AppDelegate.swift in Sources */,
+				E9E90CEC2ADFCD3F00F94BAB /* CameraDetetion.swift in Sources */,
 				E9E90CBF2ADFAD1000F94BAB /* Object_Detection.xcdatamodeld in Sources */,
 				E9E90CB72ADFAD1000F94BAB /* SceneDelegate.swift in Sources */,
 			);
@@ -290,12 +333,12 @@
 /* Begin PBXTargetDependency section */
 		E9E90CCC2ADFAD1100F94BAB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E9E90CB02ADFAD1000F94BAB /* Object_Detection */;
+			target = E9E90CB02ADFAD1000F94BAB /* DetectionCamera */;
 			targetProxy = E9E90CCB2ADFAD1100F94BAB /* PBXContainerItemProxy */;
 		};
 		E9E90CD62ADFAD1100F94BAB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E9E90CB02ADFAD1000F94BAB /* Object_Detection */;
+			target = E9E90CB02ADFAD1000F94BAB /* DetectionCamera */;
 			targetProxy = E9E90CD52ADFAD1100F94BAB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -444,6 +487,7 @@
 				DEVELOPMENT_TEAM = KNQWN32P6C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Object_Detection/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app use the camera to capture photos and videos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -454,7 +498,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "An.Object-Detection";
+				PRODUCT_BUNDLE_IDENTIFIER = An.DetectionCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -472,6 +516,7 @@
 				DEVELOPMENT_TEAM = KNQWN32P6C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Object_Detection/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app use the camera to capture photos and videos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -482,7 +527,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "An.Object-Detection";
+				PRODUCT_BUNDLE_IDENTIFIER = An.DetectionCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -506,7 +551,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Object_Detection.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Object_Detection";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetectionCamera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DetectionCamera";
 			};
 			name = Debug;
 		};
@@ -526,7 +571,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Object_Detection.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Object_Detection";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DetectionCamera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DetectionCamera";
 			};
 			name = Release;
 		};
@@ -569,7 +614,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E9E90CAC2ADFAD0F00F94BAB /* Build configuration list for PBXProject "Object_Detection" */ = {
+		E9E90CAC2ADFAD0F00F94BAB /* Build configuration list for PBXProject "DetectionCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9E90CDC2ADFAD1100F94BAB /* Debug */,
@@ -578,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9E90CDE2ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "Object_Detection" */ = {
+		E9E90CDE2ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "DetectionCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9E90CDF2ADFAD1100F94BAB /* Debug */,
@@ -587,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9E90CE12ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "Object_DetectionTests" */ = {
+		E9E90CE12ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "DetectionCameraTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9E90CE22ADFAD1100F94BAB /* Debug */,
@@ -596,7 +641,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9E90CE42ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "Object_DetectionUITests" */ = {
+		E9E90CE42ADFAD1100F94BAB /* Build configuration list for PBXNativeTarget "DetectionCameraUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9E90CE52ADFAD1100F94BAB /* Debug */,
@@ -606,6 +651,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9E90CED2ADFDC4900F94BAB /* XCRemoteSwiftPackageReference "tensorflow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tensorflow/tensorflow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		E9E90CBD2ADFAD1000F94BAB /* Object_Detection.xcdatamodeld */ = {
